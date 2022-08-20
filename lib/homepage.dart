@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:basic_practice/secondpage.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -11,6 +13,7 @@ class HomePage extends StatelessWidget {
       drawer: Drawer(
         backgroundColor: Colors.grey,
         child: Column(
+          // ignore: prefer_const_literals_to_create_immutables
           children: [
             ListTile(
               leading: Icon(Icons.star),
@@ -60,7 +63,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Container(
         child: Image.asset(
-          "assets/images/2.png",
+          "images/one.png",
           height: 600,
           width: 200,
         ),
