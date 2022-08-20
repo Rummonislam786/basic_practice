@@ -7,6 +7,10 @@ class appconst {
     return MediaQuery.of(context).size.height;
   }
 
+  double area(double a, double b) {
+    return a * b;
+  }
+
   static double fullwidth(BuildContext context) {
     return MediaQuery.of(context).size.width;
   }

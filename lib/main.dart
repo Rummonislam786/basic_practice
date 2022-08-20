@@ -1,3 +1,4 @@
+import 'package:basic_practice/authscreen.dart';
 import 'package:flutter/material.dart';
 
 import 'homepage.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: Authscreen(),
     );
   }
 }
