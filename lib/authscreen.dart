@@ -1,3 +1,6 @@
+// ignore_for_file: prefer_const_constructors
+
+import 'package:basic_practice/forthpage.dart';
 import 'package:basic_practice/secondpage.dart';
 import 'package:basic_practice/thirdpage.dart';
 import 'package:flutter/material.dart';
@@ -36,17 +39,27 @@ class _AuthscreenState extends State<Authscreen> {
                 child: Center(
                   child: Column(
                     children: [
-                      Icon(
-                        Icons.book,
-                        color: Colors.white,
+                      SizedBox(
+                        height: 20,
                       ),
-                      Text(
-                        "Flutter Course",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
+                      RichText(
+                        text: TextSpan(
+                          // ignore: prefer_const_literals_to_create_immutables
+                          children: [
+                            WidgetSpan(
+                              child: Icon(
+                                Icons.book,
+                                size: 25,
+                                color: Colors.black,
+                              ),
+                            ),
+                            TextSpan(
+                              text: "Flutter Course",
+                              style: TextStyle(fontSize: 25),
+                            ),
+                          ],
                         ),
+                        textAlign: TextAlign.center,
                       ),
                     ],
                   ),
@@ -82,8 +95,9 @@ class _AuthscreenState extends State<Authscreen> {
                       validator: (text) {
                         if (text == null || text.isEmpty) {
                           return "please input Password";
-                        } else if (text.length <= 3)
+                        } else if (text.length <= 3) {
                           return "Please input a Valid Password";
+                        }
                       },
                       obscureText: true,
                       controller: _passwordcontroller,
@@ -105,8 +119,7 @@ class _AuthscreenState extends State<Authscreen> {
                         if (_formKey.currentState!.validate()) {
                           Navigator.of(context)
                               .push(MaterialPageRoute(builder: (context) {
-                            return ThirdPage(
-                              password: _passwordcontroller.text,
+                            return Forthpage(
                               username: _usernamecontroller.text,
                             );
                           }));
