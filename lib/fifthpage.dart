@@ -11,6 +11,13 @@ class _FifthPageState extends State<FifthPage> {
   String? textvalue;
   final dummydata = ["rummon", "monowar", "Atika", "Dipto"];
   final newdummydata = ["jackfruit", "guava", "orange", "apple"];
+  final List<ListdataModel> dummylist = [
+    ListdataModel("jackfruit", Color.fromARGB(255, 3, 46, 5)),
+    ListdataModel("guava", Colors.green),
+    ListdataModel("orange", Colors.orange),
+    ListdataModel("apple", Colors.red),
+    ListdataModel("mango", Colors.yellow),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,8 +61,8 @@ class _FifthPageState extends State<FifthPage> {
             ),
             Expanded(
               child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: newdummydata.length,
+                scrollDirection: Axis.vertical,
+                itemCount: dummylist.length,
                 itemBuilder: (BuildContext context, int index) {
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -63,8 +70,9 @@ class _FifthPageState extends State<FifthPage> {
                       width: 200,
                       height: 50,
                       child: Card(
+                        color: dummylist[index].color,
                         elevation: 3,
-                        child: Center(child: Text(newdummydata[index])),
+                        child: Center(child: Text(dummylist[index].title)),
                       ),
                     ),
                   );
@@ -76,4 +84,11 @@ class _FifthPageState extends State<FifthPage> {
       ),
     );
   }
+}
+
+class ListdataModel {
+  final title;
+  final color;
+
+  ListdataModel(this.title, this.color);
 }
