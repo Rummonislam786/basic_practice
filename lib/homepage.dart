@@ -44,10 +44,11 @@ class HomePage extends StatelessWidget {
           IconButton(
             onPressed: () {
               Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Secondpage(),
-                  ));
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Secondpage(),
+                ),
+              );
             },
             icon: const FaIcon(
               FontAwesomeIcons.a,

@@ -1,5 +1,6 @@
 import 'package:basic_practice/authscreen.dart';
 import 'package:basic_practice/fifthpage.dart';
+import 'package:basic_practice/login.dart';
 import 'package:basic_practice/sidebar_x.dart';
 import 'package:basic_practice/sixthpage.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Sidebaxe(),
+      home: Loginpage(),
     );
   }
 }
