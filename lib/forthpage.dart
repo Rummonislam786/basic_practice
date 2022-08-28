@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:basic_practice/thirdpage.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +22,7 @@ class _ForthpageState extends State<Forthpage> {
           title: Text(widget.username),
         ),
         body: Material(
-          child: Container(
+          child: SizedBox(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,
               child: Column(

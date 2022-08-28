@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:basic_practice/forthpage.dart';
-import 'package:basic_practice/secondpage.dart';
-import 'package:basic_practice/thirdpage.dart';
+// import 'package:basic_practice/secondpage.dart';
+// import 'package:basic_practice/thirdpage.dart';
 import 'package:flutter/material.dart';
 
 class Authscreen extends StatefulWidget {
@@ -98,6 +98,7 @@ class _AuthscreenState extends State<Authscreen> {
                         } else if (text.length <= 3) {
                           return "Please input a Valid Password";
                         }
+                        return null;
                       },
                       obscureText: true,
                       controller: _passwordcontroller,

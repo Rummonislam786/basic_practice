@@ -1,5 +1,7 @@
+// ignore_for_file: prefer_const_constructors, camel_case_types
+
 import 'package:flutter/material.dart';
-import 'package:basic_practice/sidebar_x.dart';
+// import 'package:basic_practice/sidebar_x.dart';
 import 'package:sidebarx/sidebarx.dart';
 
 class Sidebaxe extends StatefulWidget {

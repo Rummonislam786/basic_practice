@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable, prefer_const_constructors
+
 import 'package:basic_practice/appconst.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';

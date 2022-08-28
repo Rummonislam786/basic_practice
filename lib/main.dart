@@ -1,11 +1,13 @@
-import 'package:basic_practice/authscreen.dart';
-import 'package:basic_practice/fifthpage.dart';
+// import 'package:basic_practice/authscreen.dart';
+// import 'package:basic_practice/fifthpage.dart';
+// ignore_for_file: prefer_const_constructors
+
 import 'package:basic_practice/login.dart';
-import 'package:basic_practice/sidebar_x.dart';
-import 'package:basic_practice/sixthpage.dart';
+// import 'package:basic_practice/sidebar_x.dart';
+// import 'package:basic_practice/sixthpage.dart';
 import 'package:flutter/material.dart';
 
-import 'homepage.dart';
+// import 'homepage.dart';
 
 void main() {
   runApp(const MyApp());
