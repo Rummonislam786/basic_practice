@@ -62,12 +62,10 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: Container(
-        child: Image.asset(
-          "images/one.png",
-          height: 600,
-          width: 200,
-        ),
+      body: Image.asset(
+        "images/one.png",
+        height: 600,
+        width: 200,
       ),
     );
   }

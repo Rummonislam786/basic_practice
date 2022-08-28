@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types, prefer_const_constructors
+
 import 'package:basic_practice/appconst.dart';
 import 'package:flutter/material.dart';
 
@@ -109,51 +111,47 @@ class _sixthpageState extends State<sixthpage> {
                   ),
                   Expanded(
                     flex: 4,
-                    child: Container(
-                      child: Row(
-                        children: [
-                          Expanded(
-                            flex: 2,
-                            child: Container(
-                              color: Colors.green,
-                              child: ListView(
-                                  children: list1
-                                      .map((e) => GestureDetector(
-                                            onTap: () {
-                                              setState(() {
-                                                list1.add(e);
-                                              });
-                                            },
-                                            child: Card(
-                                              child: Padding(
-                                                padding:
-                                                    const EdgeInsets.all(8.0),
-                                                child: Text(e),
-                                              ),
-                                            ),
-                                          ))
-                                      .toList()),
-                            ),
-                          ),
-                          Expanded(
-                            flex: 2,
-                            child: Container(
-                              color: Color.fromARGB(255, 229, 255, 0),
-                              child: ListView(
-                                  children: list1
-                                      .map((e) => Card(
+                    child: Row(
+                      children: [
+                        Expanded(
+                          flex: 2,
+                          child: Container(
+                            color: Colors.green,
+                            child: ListView(
+                                children: list1
+                                    .map((e) => GestureDetector(
+                                          onTap: () {
+                                            setState(() {
+                                              list1.add(e);
+                                            });
+                                          },
+                                          child: Card(
                                             child: Padding(
                                               padding:
                                                   const EdgeInsets.all(8.0),
                                               child: Text(e),
                                             ),
-                                          ))
-                                      .toList()),
-                            ),
-                          )
-                        ],
-                      ),
-                      // height: appconst.fullheight(context),
+                                          ),
+                                        ))
+                                    .toList()),
+                          ),
+                        ),
+                        Expanded(
+                          flex: 2,
+                          child: Container(
+                            color: Color.fromARGB(255, 229, 255, 0),
+                            child: ListView(
+                                children: list1
+                                    .map((e) => Card(
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text(e),
+                                          ),
+                                        ))
+                                    .toList()),
+                          ),
+                        )
+                      ],
                     ),
                   )
                 ],
